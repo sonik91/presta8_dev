@@ -1,0 +1,52 @@
+
+
+// Couleurs
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// merge des couleur avec la carte des couleur de bootstrap
+$custom-color: (
+    "custom-color": #900,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+);
+$theme-colors : map-merge($theme-colors, $custom-color);//merge avec theme color pour que toutes les classe ce crée (ex: bg-custom-color)
+
+
+
+// Typographie
+$base-font-family: Arial, sans-serif;
+$base-font-size: 14px;
+$heading-font-family: 'Roboto', Arial, sans-serif;
+$heading-font-weight: bold;
+$heading-font-size: 24px;
+
+// Espacements
+$base-spacing: 16px;
+$small-spacing: calc($base-spacing / 2);
+$medium-spacing: $base-spacing;
+$large-spacing: calc($base-spacing * 2);
+
+// Dimensions
+$container-max-width: 1200px;
+$button-padding: 8px 16px;
+$input-padding: 8px 12px;
+
+// Breakpoints
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1400px;

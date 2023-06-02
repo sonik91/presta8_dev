@@ -1,0 +1,17 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "opacity": (
+      property: opacity,//nom de la proprieter
+      responsive: true,//rajoute les breackpoint
+      values: (//diferente valeur
+        0: 0,
+        10: .1,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: 1,
+      )
+    )
+  )
+);
